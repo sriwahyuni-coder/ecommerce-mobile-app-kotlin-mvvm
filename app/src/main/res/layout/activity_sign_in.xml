@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_24sdp"
+    android:gravity="center_vertical"
+    tools:context=".ui.auth.signin.SignInActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edEmail"
+            style="@style/TextView.PoppinsNormal14sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:text="tisto@gmail.com" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edPassword"
+            style="@style/TextView.PoppinsNormal14sp020202"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:text="12345678" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvForgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lupa Password ?"
+        style="@style/TextView.PoppinsNormal10sp09af00"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="end"/>
+
+    <Button
+        android:id="@+id/btSignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="Masuk"
+        android:textAllCaps="false"
+        style="@style/Button.Primary"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="atau masuk dengan"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_16sdp"
+        style="@style/TextView.PoppinsNormal10sp8D92A3"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:text="Google"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:textAllCaps="false"
+        style="@style/Button.Secondary.OutlinedButton"
+        app:icon="@drawable/ic_google"
+        app:iconSize="@dimen/_24sdp"
+        app:iconTint="@null"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_16sdp">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum punya akun?"
+            style="@style/TextView.PoppinsNormal10sp8D92A3"/>
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Daftar"
+            style="@style/TextView.PoppinsNormal10sp09af00"/>
+    </LinearLayout>
+</LinearLayout>
